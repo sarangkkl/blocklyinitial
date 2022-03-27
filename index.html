@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex">
+        <div class="blockly-editor">
+            <div id="blocklyDiv" style="height: 480px; width: 400px;"></div>
+            <xml id="toolbox" style="display: none">
+              
+              
+              <block type="move_forward"></block>
+              <block type="move_backward"></block>
+              <block type="move_left"></block>
+              <block type="move_right"></block>
+            </xml>
+          </div>
+
+          <div  class="ground" >
+            <div class="player" id="player"></div>
+
+          </div>
+    </div>
+    
+
+      <button type="button" id="" style="position: absolute; right:50px;color: red;" onclick="moveForward();">Run Program</button>
+
+      <script src="https://unpkg.com/blockly"></script>
+
+  <script src="scripts/music_maker.js"></script>
+  <script src="scripts/sound_blocks.js"></script>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
